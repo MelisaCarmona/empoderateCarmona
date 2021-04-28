@@ -1,0 +1,371 @@
+/** Palette colors
+$charcoal: #264653ff;
+$persian-green: #2a9d8fff;
+$orange-yellow-crayola: #e9c46aff;
+$sandy-brown: #f4a261ff;
+$burnt-sienna: #e76f51ff;
+*/
+
+
+/* Se importan las fuentes a utilizar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:wght@100;400&display=swap');
+body {
+    margin: 0;
+}
+
+p {
+    letter-spacing: 1px;
+    /* line-height: 15px; */
+    font-size: 20px;
+    font-weight: 2200;
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-family: 'Akaya Telivigala';
+    font-weight: 300;
+}
+
+.encabezado h1 {
+    display: inline-block;
+}
+
+h1#user {
+    float: right;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+
+/** Atributos y etiquetas globales*/
+
+.tituloEncabezado {
+    font-family: 'Akaya Telivigala';
+}
+
+.tituloEncabezado a {
+    text-decoration: none;
+    color: #264653ff;
+    font-size: 60px;
+}
+
+.tituloEncabezado a:hover {
+    font-size: 60px;
+    transition: 3ms;
+}
+
+
+/**Menú**/
+
+nav {
+    background-color: #2a9d8fff;
+}
+
+ul {
+    margin-top: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 19%;
+    text-align: center;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+ul ul {
+    display: none;
+    position: absolute;
+}
+
+ul ul li {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+li:hover {
+    background-color: #264653ff;
+}
+
+li a:active {
+    color: #ccc;
+}
+
+li:hover ul {
+    display: block;
+    background-color: #2a9d8fff;
+    width: 100%;
+}
+
+li ul li:hover {
+    background-color: #264653ff !important;
+    width: 100% !important;
+}
+
+
+/** Galería de Index*/
+
+#galeryIndex {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translate(20px, 30px);
+}
+
+#galeryIndex article {
+    width: 360px;
+}
+
+#galeryIndex img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#galeryIndex p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.tendencias {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: upper-roman;
+}
+
+.tendencias img {
+    width: 350px;
+    height: 200px;
+}
+
+.tendencias h3 {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Akaya Telivigala';
+}
+
+.tendencias p {
+    text-align: center;
+}
+
+.tendencias article {
+    width: 350px;
+}
+
+ul.adentro {
+    list-style-position: inside;
+}
+
+ul.adentro li a {
+    text-transform: capitalize;
+}
+
+audio {
+    margin-top: 30px;
+}
+
+table {
+    padding: 0% 5% 0% 5%;
+}
+
+table tr {
+    padding: 10px;
+}
+
+table tr th {
+    color: red;
+    padding: 20px;
+}
+
+
+/** Contacto */
+
+form {
+    background-color: #000;
+    color: white;
+    padding: 1%;
+    width: 25%;
+    animation-name: efectoContacto;
+    animation-iteration-count: 15s;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+.btn {
+    background-color: #3284D1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #3284D1;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 5px;
+}
+
+#article1 img {
+    transition: all 0.4s ease-out .7s;
+}
+
+#article1 img:hover {
+    transform: scale(1.20);
+}
+
+#article2:hover {
+    transition: all 0.4s ease-out .7s;
+    transform: translate(10px, 20px);
+}
+
+
+/** Test */
+
+
+/** Universidades */
+
+#sectionUniversity {
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionUniversity p {
+    order: 2;
+}
+
+video {
+    width: 50%;
+}
+
+#gridTest {
+    display: grid;
+    grid-template-areas: "nav header header" "nav section section";
+}
+
+
+/** Palette colors
+$charcoal: #264653ff;
+$persian-green: #2a9d8fff;
+$orange-yellow-crayola: #e9c46aff;
+$sandy-brown: #f4a261ff;
+$burnt-sienna: #e76f51ff;
+*/
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    background-image: linear-gradient(to bottom, #264653ff, #fff);
+}
+
+#banner h1 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-duration: 4s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes efectoContacto {
+    0% {
+        width: 180px;
+    }
+    25% {
+        width: 300px;
+    }
+    50% {
+        width: 210px;
+        background-color: #264653ff;
+    }
+    75% {
+        width: 300px;
+    }
+    100% {
+        width: 150px;
+        background-color: #2a9d8fff;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .tituloEncabezado a {
+        font-size: 20px;
+    }
+    .encabezado {
+        display: block;
+        float: none;
+    }
+    li {
+        display: block;
+    }
+    li a {
+        font-size: 15px;
+    }
+    #galeryIndex {
+        flex-direction: column;
+    }
+    #galeryIndex article {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .tituloEncabezado a {
+        font-size: 40px;
+    }
+    li {
+        display: block;
+    }
+    li a {
+        font-size: 15px;
+    }
+    #galeryIndex {
+        display: block;
+    }
+    #galeryIndex img {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    header {
+        display: grid;
+        grid-template-columns: 80vw 20vw;
+        /* grid-template-rows: 20% 20% 60%; */
+        grid-template-areas: "nav nav" "titulo titulo" "banner banner";
+    }
+    nav {
+        grid-area: nav;
+    }
+    .encabezado {
+        grid-area: titulo;
+    }
+    #user {
+        grid-area: usuario;
+    }
+    #banner {
+        grid-area: banner;
+    }
+}

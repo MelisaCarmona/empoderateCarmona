@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lobster&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+:root {
+    --rosa: #EC7F7F;
+    --blanco: #F6F3C1;
+    --rey: #4554A1;
+    --azul: #5367CD;
+}
+
+#content h1 {
+    color: var(--azul);
+    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+#content h2 {
+    color: var(--azul);
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.tendencias {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: upper-roman;
+}
+
+.tendencias img {
+    width: 100%;
+    height: 200px;
+}
+
+.tendencias h3 {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Akaya Telivigala';
+}
+
+.tendencias p {
+    text-align: center;
+}
+
+.tendencias article {
+    width: 350px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 50%;
+}
+
+.infoRow {
+    position: flex;
+    justify-content: space-between;
+}

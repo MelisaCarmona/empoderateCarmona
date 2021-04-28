@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lobster&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+:root {
+    --rosa: #EC7F7F;
+    --blanco: #F6F3C1;
+    --rey: #4554A1;
+    --azul: #5367CD;
+}
+
+#info {
+    margin-top: 30px;
+    padding: 0px;
+    width: 100%;
+}
+
+.infoRow {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.infoRow img {
+    width: 100%;
+    max-width: 100%;
+    height: 45%;
+    margin: 4px 0px 10px 0px;
+    border-radius: 5px;
+}
+
+#galeria {
+    padding: 0;
+}
+
+.infoRow h1 {
+    color: var(--azul);
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}
