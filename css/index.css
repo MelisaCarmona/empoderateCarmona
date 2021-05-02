@@ -102,6 +102,12 @@ li ul li:hover {
     grid-template-rows: 60px 80vh;
 }
 
+@media (min-width: 350px) {
+    #intro h2 {
+        line-height: 2em;
+    }
+}
+
 @media (max-width: 576px) {
     .index {
         grid-template-columns: 100px 70vw;
