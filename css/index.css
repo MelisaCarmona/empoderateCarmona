@@ -102,50 +102,9 @@ li ul li:hover {
     grid-template-rows: 60px 80vh;
 }
 
-@media (max-width: 576px) {
-    .index {
-        grid-template-columns: 100px 70vw;
-        grid-template-rows: 100vh;
-        grid-template-areas: "header body";
-    }
+@media (max-width:1024px) {
     header {
-        grid-area: header;
-        background: rgb( 0, 0, 0, 0.8);
-        display: block;
-    }
-    header h1 {
-        font-size: 20px;
-    }
-    #intro {
-        grid-area: body;
-    }
-    #intro div h2 {
-        font-size: 5vw;
-    }
-    li {
-        display: block;
-        position: relative;
-        height: 100%;
-        width: 100%;
-    }
-    li a {
-        font-size: 10px;
-    }
-    nav li ul {
-        width: 250px;
-        margin: 0;
-        display: none;
-        position: absolute;
-        left: 100%;
-        top: 0px;
-    }
-    ul ul li {
-        display: block;
-        width: 100%;
-    }
-    li:hover ul {
-        display: block;
-        width: 100%;
+        grid-template-columns: 25vw 75vw;
     }
 }
 
@@ -193,8 +152,49 @@ li ul li:hover {
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 576px) {
+    .index {
+        grid-template-columns: 100px 70vw;
+        grid-template-rows: 100vh;
+        grid-template-areas: "header body";
+    }
     header {
-        grid-template-columns: 25vw 75vw;
+        grid-area: header;
+        background: rgb( 0, 0, 0, 0.8);
+        display: block;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    #intro {
+        grid-area: body;
+    }
+    #intro div h2 {
+        font-size: 5vw;
+    }
+    li {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    li a {
+        font-size: 10px;
+    }
+    nav li ul {
+        width: 250px;
+        margin: 0;
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0px;
+    }
+    ul ul li {
+        display: block;
+        width: 100%;
+    }
+    li:hover ul {
+        display: block;
+        width: 100%;
     }
 }

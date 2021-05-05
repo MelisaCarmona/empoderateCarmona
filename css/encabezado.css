@@ -137,9 +137,9 @@ li ul li:hover {
     width: 5% !important;
 }
 
-@media screen and (min-width:360px) {
-    * {
-        color: blue;
+@media only screen and (max-width:1024px) {
+    header {
+        grid-template-columns: 25vw 75vw;
     }
 }
 
@@ -190,11 +190,5 @@ li ul li:hover {
     li:hover ul {
         display: block;
         width: 100%;
-    }
-}
-
-@media only screen and (max-width:1024px) {
-    header {
-        grid-template-columns: 25vw 75vw;
     }
 }
